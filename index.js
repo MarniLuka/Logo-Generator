@@ -10,8 +10,8 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What color would you like the logo to be?',
-            name: 'color',
+            message: 'What color would you like your text to be?',
+            name: 'textColor',
         },
         {   
             type: 'list',
@@ -22,6 +22,11 @@ inquirer
                 'triangle',
                 'square',
             ],
+        },
+        {
+            type: 'input',
+            message: 'What color would you like the shape to be?',
+            name: 'shapeColor',
         },
     ])
     .then
