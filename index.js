@@ -20,9 +20,9 @@ inquirer
             message: 'Please select a shape:',
             name: 'shape',
             choices: [
-                'circle',
-                'triangle',
-                'square',
+                'Circle',
+                'Triangle',
+                'Square',
             ],
         },
         {
@@ -36,3 +36,18 @@ inquirer
     })
 
 
+const shapeTriangle = logoShapes.shapeTriangle;
+const shapeCircle = logoShapes.shapeCircle;
+const shapeSquare = logoShapes.shapeSquare;
+
+const logoTemplate = (responses) => {
+    if (responses.shape === 'Circle') {
+        return `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200"> ${shapeCircle(responses.shapeColor)}`
+    }
+    if (responses.shape === 'Triangle') {
+        return `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200"> ${shapeTriangle(responses.shapeColor)}`
+    }
+    if (responses.shape === 'Square') {
+        return `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200"> ${shapeSquare(responses.shapeColor)}`
+    }
+}
