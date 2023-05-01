@@ -33,6 +33,11 @@ inquirer
     ])
     .then((responses) => {
         console.log(responses);
+
+        const newLogo = logoTemplate(responses);
+        
+        fs.writeFile('logo.svg', newLogo, (err) =>
+        err ? console.log(err) : console.log("Created SVG file."))
     })
 
 
