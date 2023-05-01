@@ -1,6 +1,8 @@
-const inquirer = requrie('inquirer');
+const inquirer = require('inquirer');
 const fs = require('fs');
+const logoShapes = require('./lib/shapes');
 
+// Questions to generate logo
 inquirer
     .prompt([
         {
@@ -29,4 +31,8 @@ inquirer
             name: 'shapeColor',
         },
     ])
-    .then
+    .then((responses) => {
+        console.log(responses);
+    })
+
+
