@@ -42,7 +42,7 @@ inquirer
 // The template for the different possible shapes the logo can have
 const logoTemplate = (responses) => {
     if (responses.shape === 'Circle') {
-        return `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200"> 
+        return `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="300"> 
         <circle cx="115" cy="165" r="110" fill="${responses.shapeColor}" />
         <text x="115" y="200" font-size="100" text-anchor="middle" fill="${responses.textColor}">${responses.text}</text>
         </svg>`
