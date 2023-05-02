@@ -2,7 +2,7 @@
 
 ## Description 
 
-Using only JavaScript, we had to generate a simple SVG logo. Node.js and Inquirer were used 
+Using only JavaScript, we had to create a simple SVG logo. Node.js and Inquirer were used to generate the logo.
 
 ## Installation
 Node.js is required to be downloaded to use this application. Inquirer, which is in the package.json, needs to be installed to run the questions. To run any tests, Jest, also in the package.json, needs to be installed as well.
