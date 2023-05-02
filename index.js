@@ -1,6 +1,5 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const logoShapes = require('./lib/shapes');
 
 // Questions to generate logo
 inquirer
@@ -33,18 +32,14 @@ inquirer
     ])
     .then((responses) => {
         console.log(responses);
-
+        // combines the logo template and the user responses
         const newLogo = logoTemplate(responses);
-        
+        // creates a new svg file from the user input
         fs.writeFile('logo.svg', newLogo, (err) =>
         err ? console.log(err) : console.log("Created SVG file."))
     })
 
-
-const shapeTriangle = logoShapes.shapeTriangle;
-const shapeCircle = logoShapes.shapeCircle;
-const shapeSquare = logoShapes.shapeSquare;
-
+// The template for the different possible shapes the logo can have
 const logoTemplate = (responses) => {
     if (responses.shape === 'Circle') {
         return `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200"> 
