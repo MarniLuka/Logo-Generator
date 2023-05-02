@@ -9,7 +9,7 @@ Node.js is required to be downloaded to use this application. Inquirer, which is
 
 ## Usage
 To generate your simple logo, you need to run 'node index.js' in your terminal. You will then be prompted to answer a few questions. Upon answering all of the questions, you should receive a message stating "Created SVG file." This means that your logo was successfully created. If you receive an error, please try again.
-A [demonstration video]() is provided.
+A [demonstration video](https://drive.google.com/file/d/1oTlLb6l0NwDPG5IPkF8Xvkg3QyvdtENO/view?usp=sharing) is provided.
 
 
 ## Credits
