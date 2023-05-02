@@ -31,9 +31,9 @@ inquirer
         },
     ])
     .then((responses) => {
-        console.log(responses);
         // combines the logo template and the user responses
         const newLogo = logoTemplate(responses);
+        
         // creates a new svg file from the user input
         fs.writeFile('logo.svg', newLogo, (err) =>
         err ? console.log(err) : console.log("Created SVG file."))
